@@ -35,9 +35,19 @@ public class FakeTicket : ITicket
 
 public class FakeTicketPrinter: ITicketPrinter
 {
+    bool printSuccessful;
+
     public bool PrintWasCalledFor(ITicket ticket)
     {
-        return false;
+        return printSuccessful;
+    }
+
+    public void Print(ITicket ticket)
+    {
+        if(ticket == ticket)
+        {
+            printSuccessful = true;
+        }
     }
 }
 
@@ -48,5 +58,10 @@ public class FakeTicketService: ITicketService
     public FakeTicketService(ITicket ticketToBePrinted)
     {
         this.ticketToBePrinted = ticketToBePrinted;
+    }
+
+    public ITicket GenerateTicket()
+    {
+        return ticketToBePrinted;
     }
 }
