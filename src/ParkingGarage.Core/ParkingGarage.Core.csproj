@@ -42,6 +42,7 @@
     <Compile Include="ITicketPrinter.cs" />
     <Compile Include="ITicketService.cs" />
     <Compile Include="TicketMachineController.cs" />
+    <Compile Include="TicketService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

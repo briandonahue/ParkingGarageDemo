@@ -31,6 +31,7 @@ public class When_button_is_pushed
 
 public class FakeTicket : ITicket
 {
+    public DateTime ArrivalTime { get; set; }
 }
 
 public class FakeTicketPrinter: ITicketPrinter

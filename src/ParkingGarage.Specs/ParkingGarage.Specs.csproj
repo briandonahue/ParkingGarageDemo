@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TicketMachineControllerSpecs.cs" />
+    <Compile Include="TicketServiceSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
