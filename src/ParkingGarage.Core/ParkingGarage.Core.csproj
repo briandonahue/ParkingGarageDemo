@@ -38,6 +38,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IClock.cs" />
+    <Compile Include="ITicket.cs" />
+    <Compile Include="ITicketGenerator.cs" />
+    <Compile Include="ITicketPrinter.cs" />
+    <Compile Include="Ticket.cs" />
+    <Compile Include="TicketGenerator.cs" />
+    <Compile Include="TicketKioskController.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
